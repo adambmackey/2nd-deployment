@@ -1,5 +1,6 @@
 const express = require('express')
 const path = require('path')
+
 const app = express()
 
 app.use(express.static('public'))
@@ -10,4 +11,4 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 4005
 
-app.listen(PORT, () => { console.log(`Listeing on ${PORT}`)})
+app.listen(PORT, () => { console.log(`listening on ${PORT}`)})
